@@ -9,5 +9,5 @@ Here assume you have installed JDK(>=1.8) and Maven(>=3.0).
 then the executable file(.exe) will be found in the target directory.
 # How to use SQL Coder?
 ## Feature Instruction
-
+![Feature](https://github.com/achilles-liu/sql-coder/SQLCoder_Feature.jpg)
 ## Usage
