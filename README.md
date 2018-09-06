@@ -13,7 +13,7 @@ then the executable file(.exe) will be found in the target directory.
 ### User Input Area
 You should input basic information to connect database.In general,you must input host,database's schema,user's name and password to log on the specified database.
 ### System Prompt Area
-this are will show all system operation state.For example,it will be shown in which has connected to database successfully or not.
+this will show all system operation state.For example,it will be shown in which has connected to database successfully or not.
 ### Database Information
 Since the database has been connected successfully,here will show table list of the specified database.If you want to review the ddl script of table,you can double click the corresponding table's name.
 ### DDL Information
