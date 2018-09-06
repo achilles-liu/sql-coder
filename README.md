@@ -29,3 +29,6 @@ If you have selected the table and inputted the package name,the Java Bean Infor
 ![Connection](https://github.com/achilles-liu/sql-coder/blob/master/src/main/resources/png/SQLCoder_Conn.jpg)
 ### DDL Script
 The DDL script will be generated,if you double-click the specified table's name as follows,
+![DDL](https://github.com/achilles-liu/sql-coder/blob/master/src/main/resources/png/SQLCoder_DDL.jpg)
+### Generate Java Bean
+After input package's name,the Java Bean will be generated to click `generate` button,
