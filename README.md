@@ -1,5 +1,5 @@
 # What is SQL Coder ?
-SQL Coder is a tools for generating java bean according to data model.
+SQL Coder is a tool for generating java bean according to data model.
 # How to package SQL Coder ?
 Here assume you have installed JDK(>=1.8) and Maven(>=3.0).
 * You should clone source code to local machine.
