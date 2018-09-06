@@ -1,2 +1,2 @@
-# sql-coder
-transfer data model to java bean.
+# what is SQL Coder ?
+SQL Coder is a tools for generating java bean according to data model.
