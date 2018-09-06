@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.PasswordField?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.johnny.handler.AppBizHandler">
+	<HBox>
+		<padding><Insets top="10" bottom="10"></Insets></padding>
+		<GridPane>
+			<padding><Insets left="10" top="5"></Insets></padding>
+			<Label text="Host:" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+			<TextField  fx:id="dbHost" GridPane.rowIndex="0" GridPane.columnIndex="1"></TextField>
+			<Label text="Database:" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+			<TextField  fx:id="dbName" GridPane.rowIndex="0" GridPane.columnIndex="3"></TextField>
+			
+			<Label text="Username:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+			<TextField fx:id="dbUsername" GridPane.rowIndex="1" GridPane.columnIndex="1"></TextField>
+			<Label text="Password:" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+			<!-- <TextField fx:id="dbPassword" GridPane.rowIndex="1" GridPane.columnIndex="3"></TextField> -->
+			<PasswordField fx:id="dbPassword" GridPane.rowIndex="1" GridPane.columnIndex="3"></PasswordField>
+			
+			<Button fx:id="dbConn" text="连接" onAction="#conn" GridPane.rowIndex="1" GridPane.columnIndex="4"></Button>
+			<Label fx:id="lblTxt" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="5" style="-fx-text-fill:red;"/>
+		</GridPane>
+	</HBox>
+	<SplitPane orientation="HORIZONTAL" minHeight="300">
+		<GridPane>
+			<Label text="Database Information" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+			<TreeView fx:id="dbTree" GridPane.rowIndex="1" GridPane.columnIndex="0" minWidth="200"></TreeView>
+		</GridPane>
+		<GridPane>
+			<Label text="DDL Statement" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+			<TextArea fx:id="sourceTextArea" GridPane.rowIndex="1" GridPane.columnIndex="0" minHeight="400" minWidth="250"/>
+		</GridPane>
+		<GridPane>
+			<Label text="Java Bean Information" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+			<TextArea fx:id="descTextArea" GridPane.rowIndex="1" GridPane.columnIndex="0" minHeight="400" minWidth="350"/>
+		</GridPane>
+	</SplitPane>
+	<VBox>
+		<HBox>
+			<padding><Insets top="10" left="10"></Insets></padding>
+			<Label text="package name : " minWidth="100"/>
+			<TextField fx:id="tfPkgName" />
+			<HBox>
+				<padding><Insets left="10"></Insets></padding>
+				<Button text="select download directory..." onAction="#selectDir"/>
+			</HBox>
+		</HBox>
+		<HBox>
+			<padding><Insets top="5" left="10" bottom="5"></Insets></padding>
+			<HBox>
+				<padding><Insets right="10"></Insets></padding>
+				<Button fx:id="btnGenerate" text="generate" onAction="#generateCode"/>
+			</HBox>
+			<HBox>
+				<padding><Insets right="10"></Insets></padding>
+				<Button text="download Java Bean" onAction="#downloadJavaBean" fx:id="btnDownload"/>
+			</HBox>
+			<HBox >
+				<padding><Insets right="10"></Insets></padding>
+				<Button text="clear" onAction="#clearDown"></Button>
+			</HBox>
+		</HBox>
+	</VBox>
+</VBox>
+
