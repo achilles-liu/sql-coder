@@ -25,3 +25,7 @@ If you have selected the table and inputted the package name,the Java Bean Infor
 * You can download the Java Bean Class to click `download Java Bean` button
 * You can clear DDL Information and Java Bean Information to click `clean` button
 ## Usage
+### Database Connection
+![Connection](https://github.com/achilles-liu/sql-coder/blob/master/src/main/resources/png/SQLCoder_Conn.jpg)
+### DDL Script
+The DDL script will be generated,if you double-click the specified table's name as follows,
