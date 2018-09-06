@@ -32,3 +32,6 @@ The DDL script will be generated,if you double-click the specified table's name 
 ![DDL](https://github.com/achilles-liu/sql-coder/blob/master/src/main/resources/png/SQLCoder_DDL.jpg)
 ### Generate Java Bean
 After input package's name,the Java Bean will be generated to click `generate` button,
+![JAVABean](https://github.com/achilles-liu/sql-coder/blob/master/src/main/resources/png/SQLCoder_JavaBean.jpg)
+### Download Java Bean Class
+After you select the specified directory,the java class file will be downloaded to click `download Java Bean` button.
