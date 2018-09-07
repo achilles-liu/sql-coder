@@ -52,10 +52,10 @@ public class D {
 	
 	public static void main(String[] args) {
 		String host = "127.0.0.1";
-		String name = "smartsso";
+		String name = "test";
 		//String url = String.format(D.db.MYSQL, host,name);
 		D db = new D();
-		Connection con = db.conn(host, name, "root", "126219");
+		Connection con = db.conn(host, name, "root", "123456");
 		System.out.println(con);
 	}
 }
